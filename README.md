@@ -1,1 +1,4 @@
-# apartment_raccoons_nlp
+To Run:
+```
+python main.py
+```
