@@ -40,13 +40,13 @@ for question in questions_list:
     # Define rule for text extraction
     # whenever "buy" is followed by "proper noun (name of company)" and "noun", matcher finds pattern in text
     pattern_upgrade_downgrade = [{'TEXT': 'buy'}, {'POS': 'PROPN'}, {'POS': 'NOUN'}] # upgrade/downgrades
-    matcher.add('upgrade_downgrades', None, pattern_upgrade_downgrade)
+    matcher.add('upgrade_downgrades', [pattern_upgrade_downgrade])
 
     pattern_performance = [{'POS': 'PROPN'}, {'TEXT': 'perform'}] # tearsheet/ sentiment
-    matcher.add('performance', None, pattern_performance)
+    matcher.add('performance', [pattern_performance])
 
     pattern_competitors = [{'TEXT': 'competitors'}, {'DEP': 'prep'}, {'POS': 'PROPN'}] # peer competitors, secondary ticker?
-    matcher.add('competitors', None, pattern_competitors)
+    matcher.add('competitors', [pattern_competitors])
 
     matches = matcher(doc)
     print('matches: ', matches)
