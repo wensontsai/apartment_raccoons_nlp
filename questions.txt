@@ -1,0 +1,17 @@
+What was the revenue for Amazon last year?
+METRIC - COMPANY - DURATION
+
+What was the revenue increase for Amazon from last year?
+METRIC - DIRECTION - COMPANY - DURATION
+
+What was the revenue change from last year for Amazon?
+METRIC - DIRECTION - DURATION - COMPANY
+
+Give me the same store sales and revenue numbers for Amazon this quarter
+METRIC + METRIC - COMPANY - DURATION
+
+How was the growth for Amazon?
+METRIC - COMPANY        (Possible Extension : use last quarter by default)
+
+How was the sales growth for Amazon this quarter ?
+METRIC - DIRECTION - COMPANY - DURATION
