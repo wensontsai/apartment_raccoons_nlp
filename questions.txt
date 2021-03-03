@@ -15,3 +15,6 @@ METRIC - COMPANY        (Possible Extension : use last quarter by default)
 
 How was the sales growth for Amazon this quarter ?
 METRIC - DIRECTION - COMPANY - DURATION
+
+What was the increase in revenue from last to this year for Amazon ?
+DIRECTION - METRIC - DURATION - COMPANY
